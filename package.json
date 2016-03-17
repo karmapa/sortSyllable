@@ -1,0 +1,15 @@
+{
+  "name": "sortsyllable",
+  "version": "1.0.0",
+  "description": "sort tibetan syllables",
+  "main": "sortsyllable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/karmapa/tools_by_technical_team/tree/master/sortsyllable"
+  },
+  "author": "rickie120243",
+  "license": "Copyright"
+}
