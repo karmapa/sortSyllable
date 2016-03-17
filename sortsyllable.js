@@ -1,27 +1,14 @@
-//User input
-var list = './test.lst';
-var textFolder = './test';
-//-------------------------//
-var fs = require('fs');
-var bom = String.fromCharCode(0xfeff);
-var fns = fs.readFileSync(list, 'utf8')
-            .replace(bom, '').split(/\r?\n/);
-
-function sortSyllables(fns) {
+exports.sortSyllable = function (m) {
   var obj = {};
   var totalcount = 0;
-  var files;
-  for (var i = 0; i < fns.length; i++) {
-    file = fs.readFileSync(textFolder+ '/' + fns[i], 'utf8');
-    file.replace(/[\u0f00-\u0f0a\u0f10-\u0fff]+/g, function(syl) {
-      totalcount++;
-      if (!obj[syl]) {
-        obj[syl] = 0;
-      }
-      obj[syl]++;
-    });
-  }
-  doSort(obj, totalcount);
+  m.replace(/[\u0f00-\u0f0a\u0f10-\u0fff]+/g, function(syl) {
+    totalcount++;
+    if (!obj[syl]) {
+      obj[syl] = 0;
+    }
+    obj[syl]++;
+  });
+  return doSort(obj, totalcount);
 }
 
 function doSort(obj, totalcount) {
@@ -36,7 +23,5 @@ function doSort(obj, totalcount) {
   arr.sort(function(a, b) {
     return b[1] - a[1];
   });
-  console.log(arr.join('\n'));
+  return arr;
 }
-
-sortSyllables(fns);
