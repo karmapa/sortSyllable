@@ -1,4 +1,4 @@
-exports.sortSyllable = function (m) {
+function sortSyllable (m) {
   var obj = {};
   var totalcount = 0;
   m.replace(/[\u0f00-\u0f0a\u0f10-\u0fff]+/g, function(syl) {
@@ -7,7 +7,7 @@ exports.sortSyllable = function (m) {
       obj[syl] = 0;
     }
     obj[syl]++;
-  });
+  });         
   return doSort(obj, totalcount);
 }
 
@@ -25,3 +25,7 @@ function doSort(obj, totalcount) {
   });
   return arr;
 }
+
+module.exports = {
+  sortSyllable: sortSyllable  
+};
