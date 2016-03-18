@@ -4,7 +4,7 @@
   "description": "sort tibetan syllables",
   "main": "sortsyllable.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "sortsyllable": "https://github.com/karmapa/sortSyllable.git#c0e4104"
+    "mocha": "2.4.5"
   },
   "bugs": {
     "url": "https://github.com/karmapa/sortSyllable/issues"
