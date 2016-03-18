@@ -1,6 +1,6 @@
 {
   "name": "sortsyllable",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "sort tibetan syllables",
   "main": "sortsyllable.js",
   "scripts": {
@@ -8,8 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/karmapa/tools_by_technical_team/tree/master/sortsyllable"
+    "url": "git+https://github.com/karmapa/sortSyllable.git"
   },
   "author": "rickie120243",
-  "license": "Copyright"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "sortsyllable": "https://github.com/karmapa/sortSyllable.git#3d7d97e"
+  },
+  "bugs": {
+    "url": "https://github.com/karmapa/sortSyllable/issues"
+  },
+  "homepage": "https://github.com/karmapa/sortSyllable#readme"
 }

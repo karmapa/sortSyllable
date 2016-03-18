@@ -1,0 +1,6 @@
+*.xml
+input
+main.js
+main.lst
+sorted.txt
+.travis.yml
