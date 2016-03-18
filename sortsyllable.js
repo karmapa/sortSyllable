@@ -16,6 +16,14 @@ function sortSyllable (m) {
     } else {
       return doSort(obj, totalcount); 
     }
+  } else if ('number' === typeof m) {
+    return 'input type is integer';
+  } else if ('object' === typeof m) {
+    if (Array.isArray(m)) {
+      return 'input type is array';
+    } else {
+      return 'input type is object'
+    }
   } else {
     return 'input type is not string';
   }
@@ -33,9 +41,7 @@ function doSort(obj, totalcount) {
   arr.sort(function(a, b) {
     return b[1] - a[1];
   });
-  return arr.join('\n');
+  return arr;
 }
 
-module.exports = {
-  sortSyllable: sortSyllable  
-};
+module.exports = sortSyllable;

@@ -14,7 +14,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "sortsyllable": "https://github.com/karmapa/sortSyllable.git#3d7d97e"
+    "sortsyllable": "https://github.com/karmapa/sortSyllable.git#c0e4104"
   },
   "bugs": {
     "url": "https://github.com/karmapa/sortSyllable/issues"
