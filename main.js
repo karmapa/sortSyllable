@@ -1,6 +1,6 @@
 //user input
-var list = './test.lst';
-var textFolder = './test';
+var list = './main.lst';
+var textFolder = './input';
 //------------------//
 var fs = require('fs');
 var sortSyllable = require('./sortSyllable.js');
@@ -14,4 +14,4 @@ function readFile(fn) {
 }
 
 fns.map(readFile);
-sortSyllable.sortSyllable(totaltext);
+console.log(sortSyllable.sortSyllable(totaltext));
