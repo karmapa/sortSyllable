@@ -10,7 +10,7 @@ sort tibetan syllables
 var sortSyllable = require('./sortsyllable.js');
 sortSyllable('tibetan str');
 ```
-**sortSyllable** fetches tibetan syllables by symbols. After that, it calculates the frequency of the same syllable. Then it sorts by frequency from high to low.
+**sortSyllable** fetches tibetan syllables acrroding to symbols. After that, it calculates the frequency of the same syllable. Then it sorts by frequency from high to low.
 ```javascript
 sortSyllable('དགག་དགག་དབྱེ་དབྱར་དང་ཀོ་ལྤགས་གཞི།');
 /*output will be
