@@ -2,7 +2,7 @@ function sortSyllable (m) {
   var obj = {};
   var totalcount = 0;
   if (!m) {
-    console.log('no input');
+    return 'no input';
   } else if ('string' === typeof m) {
     m.replace(/[\u0f00-\u0f0a\u0f10-\u0fff]+/g, function(syl) {
         totalcount++;
@@ -12,11 +12,12 @@ function sortSyllable (m) {
         obj[syl]++;
       }); 
     if (0 === Object.keys(obj).length ) {
-      console.log("no tibetan in input");
-    }        
-    return doSort(obj, totalcount);
+      return 'no tibetan in input';
+    } else {
+      return doSort(obj, totalcount); 
+    }
   } else {
-  console.log('input type is not string');
+    return 'input type is not string';
   }
 }
 
@@ -32,7 +33,7 @@ function doSort(obj, totalcount) {
   arr.sort(function(a, b) {
     return b[1] - a[1];
   });
-  return console.log(arr.join('\n'));
+  return arr.join('\n');
 }
 
 module.exports = {
