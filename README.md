@@ -24,7 +24,7 @@ sortSyllable('དགག་དགག་དབྱེ་དབྱར་དང་ཀ
 */
 ```
 
-## incorrect I/O
+##Incorrect I/O
 Input must be tibetan string, others return an empty array.
 ```javascript
 sortSyllable()           //[]
