@@ -23,7 +23,9 @@ function tokenize (str) {
 function doSort(obj) {
   var arr = [];
   for (var syl in obj) {
-    arr.push([syl, obj[syl]]);
+    if (obj.hasOwnProperty(syl)) {
+         arr.push([syl, obj[syl]]);
+    }
   }
   arr.sort(function(a, b) {
     return b[1] - a[1];
@@ -33,3 +35,4 @@ function doSort(obj) {
 
 module.exports = sortSyllable;
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
