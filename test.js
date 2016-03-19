@@ -4,32 +4,34 @@ var assert = require('assert');
 describe('wrong input', function () {
 
   it('string', function () {
-    var sorted1 = sortSyllable('123');
-    var sorted2 = sortSyllable('abc');
-    var sorted3 = sortSyllable(123 + 'abc');
-    assert.equal(sorted1, 'no tibetan in input');
-    assert.equal(sorted2, 'no tibetan in input');
-    assert.equal(sorted3, 'no tibetan in input');
+    var sorted = sortSyllable(123 + 'abc');
+    assert.equal(Array.isArray(sorted), true);
+    assert.equal(sorted.toString(), '');
   });
   it('integer', function () {
     var sorted = sortSyllable(123);
-    assert.equal(sorted, 'input type is integer');
+    assert.equal(Array.isArray(sorted), true);
+    assert.equal(sorted.toString(), '');
   });
   it('array', function() {
     var sorted = sortSyllable([1, 2, 3]);
-    assert.equal(sorted, 'input type is array');
+    assert.equal(Array.isArray(sorted), true);
+    assert.equal(sorted.toString(), '');
   });
   it('object', function () {
     var sorted = sortSyllable({1: 'a', 2: 'b'});
-    assert.equal(sorted, 'input type is object');
+    assert.equal(Array.isArray(sorted), true);
+    assert.equal(sorted.toString(), '');
   });
   it('no input', function () {
     var sorted = sortSyllable();
-    assert.equal(sorted, 'no input');
+    assert.equal(Array.isArray(sorted), true);
+    assert.equal(sorted.toString(), '');
   });
-  it("can't define", function () {
+  it("boolean", function () {
     var sorted = sortSyllable(true);
-    assert.equal(sorted, 'input type is not string');
+    assert.equal(Array.isArray(sorted), true);
+    assert.equal(sorted.toString(), '');
   });
 });
 

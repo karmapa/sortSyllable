@@ -14,4 +14,4 @@ function readFile(fn) {
 }
 
 fns.map(readFile);
-console.log(sortSyllable.sortSyllable(totaltext));
+console.log(sortSyllable(totaltext));

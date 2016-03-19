@@ -1,6 +1,6 @@
 {
   "name": "sortsyllable",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "sort tibetan syllables",
   "main": "sortsyllable.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/karmapa/sortSyllable.git"
   },
-  "author": "rickie120243",
+  "author": "rickie120243@gmail.com",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
