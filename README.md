@@ -10,25 +10,26 @@ sort tibetan syllables
 var sortSyllable = require('./sortsyllable.js');
 sortSyllable('tibetan str');
 ```
-**sortSyllable** fetches tibetan syllables acrroding to symbols. After that, it calculates the frequency of the same syllable. Then it sorts by frequency from high to low.
+**sortSyllable** fetches tibetan syllables acrroding to symbols. After that, it counts the number of the syllables. Then it returns the syllables and syllable counts from high to low.
 ```javascript
 sortSyllable('དགག་དགག་དབྱེ་དབྱར་དང་ཀོ་ལྤགས་གཞི།');
 /*output will be
-[ [ 'དགག', 2, '25.000000%' ],
-  [ 'དབྱེ', 1, '12.500000%' ],
-  [ 'དབྱར', 1, '12.500000%' ],
-  [ 'དང', 1, '12.500000%' ],
-  [ 'ཀོ', 1, '12.500000%' ],
-  [ 'ལྤགས', 1, '12.500000%' ],
-  [ 'གཞི', 1, '12.500000%' ] ]
+[ [ 'དགག' ,2 ],
+  [ 'དབྱེ', 1 ],
+  [ 'དབྱར', 1 ],
+  [ 'དང', 1 ],
+  [ 'ཀོ', 1 ],
+  [ 'ལྤགས', 1 ],
+  [ 'གཞི', 1 ] ]
 */
 ```
 
-## incorrect I/O alert
+## incorrect I/O
+Input must be tibetan string, others return an empty array.
 ```javascript
-sortSyllable()           //'no input'
-sortSyllable('abc');     //'no tibetan in input'
-sortSyllable(123);       //'input type is integer'
-sortSyllable([array]);   //'input type is array'
-sortSyllable({object});  //'input type is object'
+sortSyllable()           //[]
+sortSyllable('abc');     //[]
+sortSyllable(123);       //[]
+sortSyllable([array]);   //[]
+sortSyllable({object});  //[]
 ```
