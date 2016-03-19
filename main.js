@@ -8,6 +8,7 @@ var bom = String.fromCharCode(0xfeff);
 var fns = fs.readFileSync(list, 'utf8')
             .replace(bom, '').split(/\r?\n/);
 var totaltext;
+
 function readFile(fn) {
   var text = fs.readFileSync(textFolder+ '/' + fn, 'utf8');
   totaltext += text;

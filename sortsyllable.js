@@ -1,8 +1,5 @@
 function sortSyllable (content) {
-  try {
-    if ('string' !== typeof content) throw 'input is not string';
-  }
-  catch(err) {
+  if ('string' !== typeof content) {
     return [];
   }
   var tokens = tokenize(content);
