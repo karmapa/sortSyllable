@@ -45,7 +45,7 @@ describe('correct input', function () {
                    [ 'ར', 1, '7.692308%' ],
                    [ 'དང', 1, '7.692308%' ],
                    [ 'ཀོ', 1, '7.692308%' ],
-                   [ 'ལྤགས', 1, '7.692308%' ] ]
+                   [ 'ལྤགས', 1, '7.692308%' ] ];
     assert.equal(sorted.toString, output.toString);
   })
 })
