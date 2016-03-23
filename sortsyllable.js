@@ -9,10 +9,7 @@ function sortSyllable (content) {
 function tokenize (str) {
   var obj = {}
   str.replace(/[\u0f00-\u0f0a\u0f10-\u0fff]+/g, function(syl) {
-    if (!obj[syl]) {
-      obj[syl] = 0;
-    }
-    obj[syl]++;
+    obj[syl] = ++obj[syl] || 1;
   }); 
   return obj;
 }
