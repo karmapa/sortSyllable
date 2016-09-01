@@ -10,7 +10,7 @@ sort tibetan syllables
 var sortSyllable = require('./sortsyllable.js');
 sortSyllable('tibetan str');
 ```
-**sortSyllable** fetches tibetan syllables acrroding to symbols. After that, it counts the number of the syllables. Then it returns the syllables and syllable counts from high to low.
+**sortSyllable** fetches tibetan syllables acrroding to symbols. It counts the number of the syllables. Then it returns the syllables and syllable counts from high to low.
 ```javascript
 sortSyllable('དགག་དགག་དབྱེ་དབྱར་དང་ཀོ་ལྤགས་གཞི།');
 /*output will be
